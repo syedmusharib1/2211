@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="output"></h1>
+    <h1 id="print"></h1>
+    <button id="btn1">Load Large Data</button>
+    <button id="btn2" onclick="print()">Print Hi</button>
+
+    <script>
+        let btn1=document.getElementById("btn1")
+        btn1.addEventListener(`click1` , ()=>{
+            var result=0
+       for(var i=0; i<100000000; i++){
+           result +=i;
+        }
+        document.getElementById("output").innerHTML=result
+        }
+        )
+        function print(){
+            document.getElementById("print").innerHTML="HI"
+        }
+    </script>
+</body>
+</html>
